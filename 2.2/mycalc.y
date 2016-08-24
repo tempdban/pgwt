@@ -28,7 +28,7 @@ expression
     }
     | expression SUB term
     {
-        $$ = $1 + $3;
+        $$ = $1 - $3;
     }
     ;
 term

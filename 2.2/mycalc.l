@@ -3,7 +3,7 @@
 #include "y.tab.h"
 
 int
-yywarp (void)
+yywrap (void)
 {
     return 1;
 }
@@ -22,7 +22,7 @@ yywarp (void)
 }
 [ \t] ;
 . {
-    fprintf(stderr, "lexical error.\n")'
+    fprintf(stderr, "lexical error.\n");
     exit(1);
 }
 %%
